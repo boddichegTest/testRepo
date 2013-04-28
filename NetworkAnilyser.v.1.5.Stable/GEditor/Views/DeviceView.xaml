@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="GEditor.Views.DeviceView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             x:Name="UC" 
+             Width="67" Height="75">
+    <Grid Height="64" Width="66">
+        <Image HorizontalAlignment="Left" Stretch="Fill" Width="35"
+               		x:Name="point" 
+                     MouseLeftButtonUp="point_MouseLeftButtonUp" MouseLeftButtonDown="point_MouseLeftButtonDown"
+                     MouseEnter="point_MouseEnter" MouseLeave="point_MouseLeave" MouseMove="point_MouseMove" Margin="12,1,0,0" Height="35" VerticalAlignment="Top" Source="/GEditor;component/Resources/password.png" MouseRightButtonUp="point_MouseRightButtonUp" />
+        <Label HorizontalAlignment="Left" Margin="-10,34,0,0" Name="label1" Width="84" Height="27" VerticalAlignment="Top" IsEnabled="False" HorizontalContentAlignment="Center" FontFamily="Segoe UI" Foreground="White" />
+    </Grid>
+</UserControl>
